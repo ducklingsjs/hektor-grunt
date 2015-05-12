@@ -27,7 +27,12 @@
     "grunt-rev": "^0.1.0",
     "grunt-sass": "^1.0.0",
     "grunt-scss-lint": "^0.3.6",
-    "hektor-utils": "git://github.com/infinumjs/hektor-utils",
     "lodash": "^3.8.0"
+  },
+  "devDependencies": {
+    "hektor-utils": "infinumjs/hektor-utils"
+  },
+  "peerDependencies": {
+    "grunt": "^0.4.5"
   }
 }

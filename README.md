@@ -10,14 +10,17 @@ Go to examples folder and see how to use hektor
 
 ## Available grunt tasks
 
-* autoprefixer
-* handlebars
-* notify
-* open
-* rev
-* sass
-* scsslint
-* watch
+* styles
+  * sass
+  * autoprefixer
+* scripts
+  * handlebars
+* helper tasks
+  * notify
+  * open
+  * rev
+  * scsslint
+  * watch
 
 ### TODO
 

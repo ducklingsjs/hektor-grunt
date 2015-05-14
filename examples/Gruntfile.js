@@ -25,5 +25,5 @@ module.exports = function(grunt) {
 
 
   // You can still define your own
-  grunt.registerTask('scss', ['sass:dist', 'autoprefixer:dist']);
+  // grunt.registerTask('scss', ['sass:dist', 'autoprefixer:dist']);
 };

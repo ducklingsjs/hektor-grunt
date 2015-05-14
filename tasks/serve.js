@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
-  grunt.registerTask('serve', 'Serve the app', function(target) {
+  var taskCompose = require('../utils/task-compose')(grunt);
+  taskCompose('serve', function(target) {
     if (target === 'dist') {
       return grunt.task.run([
         'build',
@@ -25,10 +26,9 @@ module.exports = function(grunt) {
       'translations',
       'handlebars',
       'spritem',
-      'sass',
-      'autoprefixer',
+      'styles',
       'connect:livereload',
       'watch'
     ]);
-  });
+  }, ['build', 'open', 'connect', 'clean', 'createDefaultTemplate', 'handlebars', 'watch', 'translations', 'spritem', 'styles']);
 };

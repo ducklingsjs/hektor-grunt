@@ -23,12 +23,12 @@ module.exports = function(grunt) {
     grunt.task.run([
       'clean:server',
       'createDefaultTemplate',
-      'translations',
+      // 'translations',
       'handlebars',
-      'spritem',
+      // 'spritem',
       'styles',
       'connect:livereload',
       'watch'
     ]);
-  }, ['build', 'open', 'connect', 'clean', 'createDefaultTemplate', 'handlebars', 'watch', 'translations', 'spritem', 'styles']);
+}, ['build', 'open', 'connect', 'clean', 'createDefaultTemplate', 'handlebars', 'watch', 'styles']);
 };

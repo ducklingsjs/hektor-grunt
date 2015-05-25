@@ -1,11 +1,11 @@
 module.exports = {
   server: {
-    path: 'http://localhost:<%= connect.options.port %>'
+    path: 'http://localhost:<%= ports.server %>'
   },
   test: {
-    path: 'http://localhost:<%= connect.test.options.port %>'
+    path: 'http://localhost:<%= ports.test %>'
   },
   dist: {
-    path: 'http://localhost:<%= connect.dist.options.port %>'
+    path: 'http://localhost:<%= ports.dist %>'
   }
 };

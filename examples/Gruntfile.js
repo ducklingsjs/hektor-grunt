@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     paths: require('hektor-grunt/config/paths'),
+    ports: require('hektor-grunt/config/ports'),
 
     open: {
       google: {

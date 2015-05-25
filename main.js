@@ -1,5 +1,5 @@
 // Could be also done as require('hektor/grunt')(grunt, modules);
-// where modules are optional, but I think that it's better to explicitely call loadAll
+// where modules are optional, but I think that it's better to explicitly call loadAll
 
 module.exports = function(grunt) {
   return {

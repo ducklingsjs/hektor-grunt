@@ -1,7 +1,8 @@
 module.exports = function(port) {
   return {
     options: {
-      nospawn: true
+      nospawn: true,
+      livereload: true
     },
     sass: {
       files: ['<%= paths.app %>/styles/**/*.{scss,sass}'],
@@ -13,10 +14,10 @@ module.exports = function(port) {
       },
       files: [
         '<%= paths.app %>/*.html',
-        '{.tmp,<%= paths.app %>}/styles/**/*.css',
-        '{.tmp,<%= paths.app %>}/scripts/**/*.js',
         '<%= paths.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-        '<%= paths.app %>/scripts/templates/**/*.{ejs,mustache,hbs}'
+        '<%= paths.app %>/scripts/templates/**/*.{ejs,mustache,hbs}',
+        '{<%= paths.tmp %>,<%= paths.app %>}/styles/**/*.css',
+        '{<%= paths.tmp %>,<%= paths.app %>}/scripts/**/*.js'
       ]
     },
     jshint: {

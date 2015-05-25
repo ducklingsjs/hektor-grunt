@@ -5,7 +5,7 @@ module.exports = {
       amd: true
     },
     files: {
-      '.tmp/scripts/templates.js': ['<%= paths.app %>/scripts/templates/{,*/}*.hbs']
+      '<%= paths.tmp %>/scripts/templates.js': ['<%= paths.app %>/scripts/templates/{,*/}*.hbs']
     }
   }
 };

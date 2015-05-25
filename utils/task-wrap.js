@@ -7,7 +7,9 @@ module.exports = function(taskName, originalTask, transformer) {
     taskLoad(taskName, originalTask, function(taskOptions) {
 
       // Function that will transform our options into options that the wrapped task accepts
-      transformer = transformer || function(options) { return options; };
+      transformer = transformer || function(options) {
+        return options;
+      };
 
       // Rename the loaded task with our prefix
       var wrappedTaskName = '_hektor_' + taskOptions.name;
@@ -22,7 +24,7 @@ module.exports = function(taskName, originalTask, transformer) {
       try {
         // This is an undocumented grunt feature. That's why it's inside of a try-catch block
         wrappedDescription = grunt.task._tasks[wrappedTaskName].info;
-      } catch(e) {}
+      } catch (e) {}
       var description = taskOptions.description || wrappedDescription;
 
       // Register our wrapper task

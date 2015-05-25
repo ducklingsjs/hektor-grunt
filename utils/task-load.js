@@ -34,7 +34,7 @@ module.exports = function(taskName, originalTask, cb) {
 
         // Config can be a function that can receive some arguments. Those arguments must be optional.
         grunt.config.set(taskName, typeof config === 'function' ? config() : config);
-      } catch(e) {}
+      } catch (e) {}
     }
 
     // Call the callback (e.g. if this is used from task-wrap)
